@@ -80,9 +80,14 @@ input[type="radio"] {
 
 header{
 	width: 100%;
+	min-height: 350px;
+	background: url("../image/oavv3DC.jpg");
 
 }
 
 .wrapper{
 	width: 100%;
+	min-height: 550px;
+	background: url("../image/white.png") repeat;
+	background-size: contain;
 }
