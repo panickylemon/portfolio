@@ -1,6 +1,12 @@
 /*для ie*/
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-	body{
+	body {
 		padding-right: 10px;
+	}
+}
+
+@media screen and (max-width: 580px) {
+	.itemMenu {
+		display: none;
 	}
 }
