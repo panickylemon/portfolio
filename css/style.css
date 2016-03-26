@@ -125,23 +125,16 @@ header{
 	position: relative;
 }
 
-nav{
-	/*padding-left: 5%;*/
-}
-
 .menuWrap:after{
 	clear: both;
 	display: table;
 	content: ' ';
 }
-.menu{float: left;
+.menu{
+	float: left;
 	height: 52px;
 	padding-left: 5%;
 }
-
-/*.menuWrap{height: 52px;*/
-/*float: left;*/
-/*}*/
 
 .menuMobile{
 	background: rgba(255, 226, 59, 0.61);
@@ -156,37 +149,40 @@ nav li.itemMenu:hover{
 	background: #ffe23b;
 }
 
+nav .menuMobile p:hover{
+	background: #ffc525;
+}
+
 nav .phone{
 	float: right;
 	padding-top:15px;
 	padding-right: 7%;
-	width: -webkit-calc(5% + 10px);
-	width: -moz-calc(5% + 10px);
-	padding-right: calc(5% + 10px);
+	width: -webkit-calc(5% + 8px);
+	width: -moz-calc(5% + 8px);
+	padding-right: calc(5% + 8px);
 	font-size: 1.4em;
 	font-weight: bold;
 	color: white;
-	width: 128px;
+	width: 130px;
 	text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
-	filter: Shadow(Color=#121212, Direction=130, Strength=1);
 }
 
-nav li{
-	list-style: none;
+nav li, .menuMobile p {
 	text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
-	filter: Shadow(Color=#121212, Direction=130, Strength=1);
 }
 
 nav .menu li{
+	list-style: none;
 	display: inline-block;
 	padding: 15px 10px;
 }
 
-nav .menuMobile li {
+nav .menuMobile p {
+	color: white;
 	padding: 10px 0 10px 5%;
 	border-top: 1px solid #fffc7f;
 }
-nav .menuMobile li:last-child{
+nav .menuMobile p:last-child{
 	border-bottom: 1px solid #fffc7f;
 }
 
@@ -194,7 +190,6 @@ nav .menuMobile li:last-child{
 	font-size: 24px;
 	color: #f4f9f5;
 	text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
-	filter: Shadow(Color=#121212, Direction=130, Strength=1);
 	cursor: pointer;
 	padding-left:5%;
 	padding-top:11px;
@@ -202,11 +197,15 @@ nav .menuMobile li:last-child{
 	float: left;
 }
 
-nav li a{
+nav li a, nav .menuMobile p {
 	text-decoration: none;
 	color: white;
 	font-size: 1.3em;
 	font-weight: bold;
+}
+
+nav .menuMobile a{
+	text-decoration: none;
 }
 
 nav .menu li a{
