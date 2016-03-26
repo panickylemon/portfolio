@@ -233,35 +233,54 @@ nav li a:hover, nav li a:active {
 	color: white;
 }
 
-.topWrapper h1{
+.contentTopWrapper {
+	/*position: absolute;*/
+	/*top: 25%;*/
+
+}
+
+.contentTopWrapper:after {
+	clear: both;
+	display: table;
+	content: ' ';
+}
+
+.topWrapper h1 {
 	font-size: 2.8em;
 	padding-left: 5.5%;
 	padding-left: -webkit-calc(5% + 10px);
 	padding-left: -moz-calc(5% + 10px);
 	padding-left: calc(5% + 10px);
+	/*float: left;*/
+	/*width: 35%;*/
 	display:table-cell;
 	vertical-align: middle;
 }
 
-.infoTopWrapper{
+.infoTopWrapper {
 	display:table-cell;
 	vertical-align: middle;
-	padding-left: 60px;
+	padding-left: 100px;
 	padding-right: 6%;
 	padding-right: -webkit-calc(4% + 10px);
 	padding-right: -moz-calc(4% + 10px);
 	padding-right: calc(4% + 10px);
+	/*float: right;*/
+	/*width: 65%;*/
 }
 
-.infoTopWrapper p{
+
+.infoTopWrapper p {
 	border-left: 5px solid white;
 	height: 90px;
 	padding-left: 3%;
 	font-size: 1.3em;
+	/*display: inline-block;*/
 	display:table-cell;
 	vertical-align: middle;
 	line-height: 1.5;
 }
+
 
 /* projectsWrapper */
 
