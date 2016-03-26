@@ -123,11 +123,29 @@ header{
 	width: 100%;
 	background-color: #ffcc33;
 	position: relative;
-	height: 54px;
 }
 
 nav{
+	/*padding-left: 5%;*/
+}
+
+.menuWrap:after{
+	clear: both;
+	display: table;
+	content: ' ';
+}
+.menu{float: left;
+	height: 52px;
 	padding-left: 5%;
+}
+
+/*.menuWrap{height: 52px;*/
+/*float: left;*/
+/*}*/
+
+.menuMobile{
+	background: rgba(255, 226, 59, 0.61);
+	display: none;
 }
 
 nav ul{
@@ -138,26 +156,50 @@ nav li.itemMenu:hover{
 	background: #ffe23b;
 }
 
-
-
-nav li.phone{
+nav .phone{
 	float: right;
-	display: block;
+	padding-top:15px;
 	padding-right: 7%;
 	width: -webkit-calc(5% + 10px);
 	width: -moz-calc(5% + 10px);
 	padding-right: calc(5% + 10px);
 	font-size: 1.4em;
+	font-weight: bold;
 	color: white;
-	width: 125px;
+	width: 128px;
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
+	filter: Shadow(Color=#121212, Direction=130, Strength=1);
 }
 
 nav li{
 	list-style: none;
-	display: inline-block;
 	text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
 	filter: Shadow(Color=#121212, Direction=130, Strength=1);
+}
+
+nav .menu li{
+	display: inline-block;
 	padding: 15px 10px;
+}
+
+nav .menuMobile li {
+	padding: 10px 0 10px 5%;
+	border-top: 1px solid #fffc7f;
+}
+nav .menuMobile li:last-child{
+	border-bottom: 1px solid #fffc7f;
+}
+
+.fa-bars{
+	font-size: 24px;
+	color: #f4f9f5;
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
+	filter: Shadow(Color=#121212, Direction=130, Strength=1);
+	cursor: pointer;
+	padding-left:5%;
+	padding-top:11px;
+	display: none;
+	float: left;
 }
 
 nav li a{
@@ -165,12 +207,21 @@ nav li a{
 	color: white;
 	font-size: 1.3em;
 	font-weight: bold;
+}
+
+nav .menu li a{
 	padding: 15px 10px;
 }
 
 nav li a:hover, nav li a:active {
 	text-decoration: none;
 }
+
+
+
+
+
+
 
 .topWrapper{
 	width: 100%;

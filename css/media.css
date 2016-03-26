@@ -5,8 +5,21 @@
 	}
 }
 
-@media screen and (max-width: 580px) {
-	.itemMenu {
+@media screen and (max-width: 570px) {
+	.menu{
+		height: 45px;
+	}
+	.fa-bars{
+		display: block;
+	}
+	nav .menu li.itemMenu {
 		display: none;
+	}
+
+	nav .phone{
+		padding-right: 5%;
+		padding-top:12px;
+		font-size: 1.3em;
+		width: 120px;
 	}
 }
