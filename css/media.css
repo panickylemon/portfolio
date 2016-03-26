@@ -5,7 +5,18 @@
 	}
 }
 
-@media screen and (max-width: 570px) {
+
+@media screen and (max-width: 800px) {
+	.infoTopWrapper p{
+		font-size: 1.2em;
+		line-height: 1.2;
+	}
+	.infoTopWrapper {
+		padding-left: 40px;
+	}
+}
+
+@media screen and (max-width: 580px) {
 	.menu{
 		height: 45px;
 	}
@@ -24,5 +35,47 @@
 	}
 	nav .menuMobile p {
 		font-size: 1.2em;
+	}
+	.topWrapper h1{
+		font-size: 2em;
+		padding-left: 5%;
+	}
+	.infoTopWrapper{
+		padding-left: 30px;
+		padding-right: 5%;
+	}
+	.infoTopWrapper p{
+		font-size: 1em;
+		line-height: 1.2;
+		height: 100px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.topWrapper {
+		height: 260px;
+	}
+	.topWrapper h1{
+		padding: 10% 0;
+		display:block;
+		vertical-align: baseline;
+		text-align: center;
+
+	}
+	.infoTopWrapper{
+		display:block;
+		vertical-align: baseline;
+		padding: 0;
+
+	}
+	.infoTopWrapper p{
+		border-top: 2px solid white;
+		border-left: none;
+		padding: 3% 0 0 0 ;
+		height: 90px;
+		margin: 0 5%;
+		text-align: justify;
+		display:block;
+		vertical-align: baseline;
 	}
 }

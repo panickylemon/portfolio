@@ -9,6 +9,7 @@ html {
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
 }
+
 body {
 	margin: 0;
 	font-family: 'Roboto', sans-serif;
@@ -54,7 +55,6 @@ body {
 	font-style: normal;
 }
 
-
 @font-face {
 	font-family: 'Glyphicons Halflings';
 	src: url('../bootstrap/fonts/glyphicons-halflings-regular.eot');
@@ -75,13 +75,13 @@ body {
 	url('../bootstrap/fonts/fontawesome-webfont.svg') format('svg');
 }
 
-
 a img {
 	border: none;
 	outline: none !important;
 }
-a{
-	outline: none !important;  /* убирает обводку у кнопок и ссылок */
+
+a {
+	outline: none !important; /* убирает обводку у кнопок и ссылок */
 }
 
 a:hover, a:active {
@@ -91,15 +91,17 @@ a:hover, a:active {
 .image_hover {
 	position: absolute;
 }
+
 .image_upper {
 	position: relative;
 }
+
 .image_upper:hover {
 	opacity: 0;
 }
 
 /* для iphone - убирает автоматическое откругление уголов */
-input[type="text"],input[type="password"], textarea{
+input[type="text"], input[type="password"], textarea {
 	border-radius: 0 !important;
 	-webkit-border-radius: 0 !important;
 	-o-border-radius: 0 !important;
@@ -113,52 +115,57 @@ input[type="radio"] {
 	-webkit-appearance: radio;
 }
 
-.container{
+.container {
 	width: 100%;
+	height: 100%;
 	max-width: 1300px;
 	margin: auto;
+	display: table;
 }
 
-header{
+/* header */
+
+header {
 	width: 100%;
 	background-color: #ffcc33;
 	position: relative;
 }
 
-.menuWrap:after{
+.menuWrap:after {
 	clear: both;
 	display: table;
 	content: ' ';
 }
-.menu{
+
+.menu {
 	float: left;
 	height: 52px;
 	padding-left: 5%;
 }
 
-.menuMobile{
+.menuMobile {
 	background: rgba(255, 226, 59, 0.61);
 	display: none;
 }
 
-nav ul{
+nav ul {
 	margin: 0;
 }
 
-nav li.itemMenu:hover{
+nav li.itemMenu:hover {
 	background: #ffe23b;
 }
 
-nav .menuMobile p:hover{
+nav .menuMobile p:hover {
 	background: #ffc525;
 }
 
-nav .phone{
+nav .phone {
 	float: right;
-	padding-top:15px;
+	padding-top: 15px;
 	padding-right: 7%;
-	width: -webkit-calc(5% + 8px);
-	width: -moz-calc(5% + 8px);
+	padding-right: -webkit-calc(5% + 8px);
+	padding-right: -moz-calc(5% + 8px);
 	padding-right: calc(5% + 8px);
 	font-size: 1.4em;
 	font-weight: bold;
@@ -171,10 +178,10 @@ nav li, .menuMobile p {
 	text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
 }
 
-nav .menu li{
+nav .menu li {
 	list-style: none;
 	display: inline-block;
-	padding: 15px 10px;
+	padding: 15px 0;
 }
 
 nav .menuMobile p {
@@ -182,17 +189,18 @@ nav .menuMobile p {
 	padding: 10px 0 10px 5%;
 	border-top: 1px solid #fffc7f;
 }
-nav .menuMobile p:last-child{
+
+nav .menuMobile p:last-child {
 	border-bottom: 1px solid #fffc7f;
 }
 
-.fa-bars{
+.fa-bars {
 	font-size: 24px;
 	color: #f4f9f5;
 	text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
 	cursor: pointer;
-	padding-left:5%;
-	padding-top:11px;
+	padding-left: 5%;
+	padding-top: 11px;
 	display: none;
 	float: left;
 }
@@ -204,11 +212,11 @@ nav li a, nav .menuMobile p {
 	font-weight: bold;
 }
 
-nav .menuMobile a{
+nav .menuMobile a {
 	text-decoration: none;
 }
 
-nav .menu li a{
+nav .menu li a {
 	padding: 15px 10px;
 }
 
@@ -216,21 +224,51 @@ nav li a:hover, nav li a:active {
 	text-decoration: none;
 }
 
+/* topWrapper */
 
-
-
-
-
-
-.topWrapper{
+.topWrapper {
 	width: 100%;
-	min-height: 350px;
+	height: 330px;
 	background: url("../image/oavv3DC.jpg");
+	color: white;
 }
 
-.projectsWrapper{
+.topWrapper h1{
+	font-size: 2.8em;
+	padding-left: 5.5%;
+	padding-left: -webkit-calc(5% + 10px);
+	padding-left: -moz-calc(5% + 10px);
+	padding-left: calc(5% + 10px);
+	display:table-cell;
+	vertical-align: middle;
+}
+
+.infoTopWrapper{
+	display:table-cell;
+	vertical-align: middle;
+	padding-left: 60px;
+	padding-right: 6%;
+	padding-right: -webkit-calc(4% + 10px);
+	padding-right: -moz-calc(4% + 10px);
+	padding-right: calc(4% + 10px);
+}
+
+.infoTopWrapper p{
+	border-left: 5px solid white;
+	height: 90px;
+	padding-left: 3%;
+	font-size: 1.3em;
+	display:table-cell;
+	vertical-align: middle;
+	line-height: 1.5;
+}
+
+/* projectsWrapper */
+
+.projectsWrapper {
 	width: 100%;
 	min-height: 850px;
 	background: url("../image/white.png") repeat;
 	background-size: contain;
+
 }
