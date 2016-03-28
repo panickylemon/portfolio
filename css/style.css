@@ -123,6 +123,10 @@ input[type="radio"] {
 	display: table;
 }
 
+h2{
+	font-size: 1.6em;
+}
+
 /* header */
 
 header {
@@ -251,8 +255,6 @@ nav li a:hover, nav li a:active {
 	padding-left: -webkit-calc(5% + 10px);
 	padding-left: -moz-calc(5% + 10px);
 	padding-left: calc(5% + 10px);
-	/*float: left;*/
-	/*width: 35%;*/
 	display:table-cell;
 	vertical-align: middle;
 }
@@ -289,5 +291,65 @@ nav li a:hover, nav li a:active {
 	min-height: 850px;
 	background: url("../image/white.png") repeat;
 	background-size: contain;
+}
 
+.itemProjects{
+	margin-top: 3%;
+	height: 100%;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	background: rgba(212, 240, 255, 0.4);
+}
+
+.itemProjects:before, .itemProjects:after{
+	clear: both;
+	display: table;
+	content: ' ';
+}
+
+.textItemProjects{
+	float: left;
+	width: 34%;
+	padding-left: 5.5%;
+	padding-left: -webkit-calc(5% + 10px);
+	padding-left: -moz-calc(5% + 10px);
+	padding-left: calc(5% + 10px);
+	border: 0px solid #000;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.textItemProjects h2{
+	padding: 5% 0;
+	color: #393939;
+}
+
+.textItemProjects p{
+	font-size: 1.2em;
+	padding-bottom: 5%;
+}
+
+.textItemProjects a{
+	color: #393939;
+	font-size: 1.1em;
+}
+
+.textItemProjects a:hover{
+	color: #001065;
+}
+
+.imageItemProjects{
+	float: right;
+	width: 64%;
+	border: 0px solid #000;
+	text-align: center;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.imageItemProjects img{
+	width: 100%;
+	max-width: 500px;
 }

@@ -1,45 +1,95 @@
-@media screen and (max-width: 825px) {
-	.infoTopWrapper p{
-		font-size: 1.2em;
-		line-height: 1.2;
-	}
-	.infoTopWrapper {
-		padding-left: 70px;
+@media screen and (max-width: 880px) {
+	.imageItemProjects {
+		padding-right: 6%;
+		padding-right: -webkit-calc(4% + 10px);
+		padding-right: -moz-calc(4% + 10px);
+		padding-right: calc(4% + 10px);
 	}
 }
 
-@media screen and (max-width: 580px) {
-	.menu{
+@media screen and (max-width: 825px) {
+	h2 {
+		font-size: 1.5em;
+	}
+
+	.infoTopWrapper p {
+		font-size: 1.2em;
+		line-height: 1.2;
+	}
+
+	.infoTopWrapper {
+		padding-left: 70px;
+	}
+
+	.textItemProjects {
+		width: 40%;
+	}
+
+	.imageItemProjects {
+		width: 59%;
+	}
+}
+
+@media screen and (max-width: 595px) {
+	.menu {
 		height: 45px;
 	}
-	.fa-bars{
+
+	.fa-bars {
 		display: block;
 	}
+
 	nav .menu li.itemMenu {
 		display: none;
 	}
 
-	nav .phone{
+	nav .phone {
 		padding-right: 5%;
-		padding-top:12px;
+		padding-top: 12px;
 		font-size: 1.3em;
 		width: 120px;
 	}
+
 	nav .menuMobile p {
 		font-size: 1.2em;
 	}
-	.topWrapper h1{
+
+	.topWrapper h1 {
 		font-size: 2em;
 		padding-left: 5%;
 	}
-	.infoTopWrapper{
+
+	.infoTopWrapper {
 		padding-left: 50px;
 		padding-right: 5%;
 	}
-	.infoTopWrapper p{
+
+	.infoTopWrapper p {
 		font-size: 1em;
 		line-height: 1.2;
 		height: 100px;
+	}
+
+	.textItemProjects {
+		width: 42%;
+		padding-left: 5%;
+	}
+
+	.imageItemProjects {
+		width: 57%;
+		padding-right: 5%;
+	}
+
+	h2 {
+		font-size: 1.3em;
+	}
+
+	.textItemProjects p {
+		font-size: 1.1em;
+	}
+
+	.textItemProjects a {
+		font-size: 1.0em;
 	}
 }
 
@@ -47,27 +97,64 @@
 	.topWrapper {
 		height: 260px;
 	}
-	.topWrapper h1{
+
+	.itemProjects{
+		background: rgba(212, 240, 255, 0.25);
+	}
+
+	.topWrapper h1 {
 		padding: 10% 0;
-		display:block;
+		display: block;
 		vertical-align: baseline;
 		text-align: center;
 
 	}
-	.infoTopWrapper{
-		display:block;
+
+	.infoTopWrapper {
+		display: block;
 		vertical-align: baseline;
 		padding: 0;
 
 	}
-	.infoTopWrapper p{
+
+	.infoTopWrapper p {
 		border-top: 2px solid white;
 		border-left: none;
-		padding: 3% 0 0 0 ;
+		padding: 3% 0 0 0;
 		height: 90px;
 		margin: 0 5%;
 		text-align: justify;
-		display:block;
+		display: block;
 		vertical-align: baseline;
+	}
+
+	.textItemProjects h2{
+		padding: 0;
+		text-align: center;
+	}
+
+	.textItemProjects {
+		float: none;
+		width: 100%;
+		padding: 0%;
+	}
+
+	.imageItemProjects {
+		float: none;
+		width: 100%;
+		padding: 4% 0;
+	}
+
+	.itemProjects {
+		margin-top: 2%;
+		padding: 2% 5%;
+	}
+
+	.textItemProjects p {
+		padding-bottom: 2%;
+		padding-top: 2%;
+	}
+	.textItemProjects a{
+		text-align: right;
 	}
 }
