@@ -293,6 +293,10 @@ nav li a:hover, nav li a:active {
 	background: rgba(212, 240, 255, 0.4);
 }
 
+.itemProjects:last-child{
+	margin-bottom: 2%;
+}
+
 .itemProjects:before, .itemProjects:after{
 	clear: both;
 	display: table;
