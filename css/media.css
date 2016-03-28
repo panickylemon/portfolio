@@ -28,6 +28,9 @@
 	.imageItemProjects {
 		width: 59%;
 	}
+	.wrapperContacts h2{
+		font-size: 1.6em;
+	}
 }
 
 @media screen and (max-width: 595px) {
@@ -58,7 +61,12 @@
 		font-size: 2em;
 		padding-left: 5%;
 	}
+	.contacts{
+		padding-left: 5%;}
 
+	.contacts div{
+		font-size: 1.1em;
+	}
 	.infoTopWrapper {
 		padding-left: 50px;
 		padding-right: 5%;
@@ -82,6 +90,9 @@
 
 	h2 {
 		font-size: 1.3em;
+	}
+	.wrapperContacts h2{
+		font-size: 1.4em;
 	}
 
 	.textItemProjects p {
@@ -156,5 +167,17 @@
 	}
 	.textItemProjects a{
 		text-align: right;
+	}
+
+    .contacts{
+	    padding-bottom: 4%;
+    }
+
+	.contacts div{
+		padding-bottom: 4%;
+	}
+
+	.wrapperContacts h2{
+		padding: 5% 0;
 	}
 }
