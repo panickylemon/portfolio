@@ -143,7 +143,6 @@ header {
 
 .menu {
 	float: left;
-	height: 52px;
 	padding-left: 5%;
 }
 
@@ -180,12 +179,16 @@ nav .phone {
 
 nav li, .menuMobile p {
 	text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
+
 }
 
 nav .menu li {
 	list-style: none;
 	display: inline-block;
-	padding: 14px 0;
+	padding: 15px 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 nav .menuMobile p {
